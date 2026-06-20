@@ -252,23 +252,22 @@ h1 {
   box-shadow: var(--shadow);
 }
 
-.home-card-head {
-  display: grid;
-  grid-template-columns: 34px minmax(0, 1fr);
-  align-items: baseline;
-  gap: 14px;
-}
-
 .home-card-index {
+  display: inline-block;
+  flex: 0 0 auto;
   color: var(--muted);
   font-family: "JetBrains Mono", Consolas, monospace;
   font-size: 12px;
   letter-spacing: 0.14em;
+  line-height: 1;
 }
 
 .home-card h2 {
   min-height: 0;
   margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
   font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
   font-size: clamp(26px, 4vw, 36px);
   font-style: italic;
