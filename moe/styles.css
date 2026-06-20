@@ -226,7 +226,7 @@ h1 {
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   margin-top: 42px;
 }
@@ -403,6 +403,26 @@ kbd {
 
 .is-hidden {
   display: none;
+}
+
+.source-link {
+  color: var(--muted);
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.source-link:hover {
+  color: var(--text);
+}
+
+.alarm-table th:first-child {
+  width: 24%;
+}
+
+.alarm-table th:last-child {
+  width: 14%;
 }
 
 .empty {

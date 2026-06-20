@@ -151,7 +151,7 @@ document.querySelectorAll("a, input, .table-block, .home-card").forEach((element
 if (searchInput) {
   const empty = document.createElement("div");
   empty.className = "empty";
-  empty.textContent = "没有匹配的快捷键。";
+  empty.textContent = "没有匹配的内容。";
   empty.hidden = true;
   document.querySelector(".page").appendChild(empty);
 

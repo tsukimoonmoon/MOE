@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="description" content="汇川 SV630N 告警码速查。" />
+    <title>SV630N 告警查询</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css?v=sv630n1" />
+  </head>
+  <body>
+    <canvas id="particle-field" aria-hidden="true"></canvas>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="topbar">
+        <a class="brand" href="index.html">知识库</a>
+        <nav>
+          <a href="blender.html">Blender</a>
+          <a href="windows.html">Windows</a>
+          <a href="sv630n.html">SV630N</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="intro reveal">
+        <a class="back-link" href="index.html">返回首页</a>
+        <p class="eyebrow">Inovance SV630N</p>
+        <h1>SV630N 告警查询</h1>
+        <p>整理自汇川告警查询页面，共 124 条。支持按告警码或中文说明搜索。</p>
+        <label class="search">
+          <span>搜索</span>
+          <input id="shortcut-search" type="search" placeholder="例如：E101.0、编码器、过压、EtherCAT" autocomplete="off" />
+        </label>
+      </section>
+
+      <section class="section reveal" data-section>
+        <div class="table-block alarm-table">
+          <h3>SV630N 告警列表</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>告警码</th>
+                <th>说明</th>
+                <th>来源</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><kbd>E101.0</kbd></td><td>H02及以上功能码参数异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226472857616&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E101.1</kbd></td><td>H00/H01组参数异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226477051906&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E101.2</kbd></td><td>参数总个数变化读写时地址异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226477051907&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E102.0</kbd></td><td>FPGA通信建立的异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226477051908&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E102.8</kbd></td><td>FPGA和MCU软件版本不匹配</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226477051909&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E104.1</kbd></td><td>MCU运行超时（MCU死机）</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226477051910&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E104.2</kbd></td><td>FPGA运行超时（FPGA死机）</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226477051911&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E104.4</kbd></td><td>MCU指令更新超时</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226477051912&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E108.0</kbd></td><td>写入存储参数故障</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246210&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E108.1</kbd></td><td>读取存储参数故障</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246211&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E108.2</kbd></td><td>写EEPROM校验错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246212&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E108.3</kbd></td><td>读EEPROM校验错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246213&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E108.4</kbd></td><td>单个数据存储次数过多</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246214&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E120.0</kbd></td><td>无法识别的编码器类型</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246215&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E120.1</kbd></td><td>无对应型号电机</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246216&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E120.2</kbd></td><td>无对应型号驱动器</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246217&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E120.3</kbd></td><td>电机与驱动器功率不匹配</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246218&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E120.5</kbd></td><td>电机与驱动器电流匹配错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226481246219&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E120.6</kbd></td><td>FPGA与电机型号不匹配</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440514&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E121.0</kbd></td><td>伺服ON指令无效警告</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440515&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E122.0</kbd></td><td>多圈绝对值编码器设置错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440516&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E122.1</kbd></td><td>DI功能分配故障</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440517&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E122.2</kbd></td><td>DO功能分配故障</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440518&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E122.3</kbd></td><td>旋转模式上限过大</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440519&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E136.0</kbd></td><td>编码器ROM电机参数校验异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440520&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E136.1</kbd></td><td>编码器ROM电机参数读取异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440521&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E136.2</kbd></td><td>转矩波动补偿数据校验错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440522&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E140.0</kbd></td><td>加密芯片校验故障</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440523&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E140.1</kbd></td><td>MCU密钥计算失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226485440524&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E140.2</kbd></td><td>加密芯片版本错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634817&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E140.3</kbd></td><td>加密芯片损坏</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634818&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E150.0</kbd></td><td>STO进入安全状态</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634819&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E150.1</kbd></td><td>STO输入状态异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634820&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E150.2</kbd></td><td>Buffer5V电压检测异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634821&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E150.3</kbd></td><td>STO输入电路硬件诊断失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634822&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E150.4</kbd></td><td>PWMBuffer硬件诊断失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634823&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E150.5</kbd></td><td>STO输入信号干扰</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634824&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E201.0</kbd></td><td>P相过流</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634825&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E201.1</kbd></td><td>U相过流</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634826&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E201.2</kbd></td><td>V相过流</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634827&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E201.4</kbd></td><td>N相过流</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634828&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E208.2</kbd></td><td>编码器通讯超时</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634829&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E208.3</kbd></td><td>电流采样故障</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226489634830&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E208.4</kbd></td><td>FPGA电流环运算超时</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829121&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E210.0</kbd></td><td>输出对地短路</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829122&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E234.0</kbd></td><td>飞车</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829123&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E321.0</kbd></td><td>动态制动电阻过载故障</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829124&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E400.0</kbd></td><td>主回路电过压</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829125&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E410.0</kbd></td><td>主回路电欠压</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829126&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E420.0</kbd></td><td>主回路电缺相</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829127&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E430.0</kbd></td><td>控制电源欠压</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829128&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E500.0</kbd></td><td>电机超速</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829129&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E500.1</kbd></td><td>速度反馈溢出</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226493829130&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E500.2</kbd></td><td>FPGA位置反馈脉冲过速</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023426&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E600.0</kbd></td><td>惯量辨识失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023427&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E601.0</kbd></td><td>原点回归警告</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023428&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E601.1</kbd></td><td>原点复归开关异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023429&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E601.2</kbd></td><td>回零模式设置异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023430&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E602.0</kbd></td><td>角度辨识失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023431&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E602.2</kbd></td><td>UVW三相相序接反</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023432&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E605.0</kbd></td><td>使能速度过快</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023433&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E620.0</kbd></td><td>电机过载</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023434&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E630.0</kbd></td><td>堵转电机过热保护</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023435&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E640.0</kbd></td><td>逆变IGBT结温过高</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023436&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E640.1</kbd></td><td>续流二极管结温过高</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226498023437&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E650.0</kbd></td><td>散热片温度过高</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217730&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E661.0</kbd></td><td>STune调整失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217731&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E662.0</kbd></td><td>ETune调整失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217732&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E663.0</kbd></td><td>ITune调整失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217733&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E664.0</kbd></td><td>共振过大</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217734&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E730.0</kbd></td><td>编码器电池警告</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217735&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E731.0</kbd></td><td>编码器电池失效</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217736&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E733.0</kbd></td><td>编码器多圈计数错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217737&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E735.0</kbd></td><td>编码器多圈计数溢出</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217738&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E740.2</kbd></td><td>绝对值编码器错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217739&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E740.3</kbd></td><td>绝对值编码器单圈解算错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217740&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E740.6</kbd></td><td>编码器写入故障</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217741&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E760.0</kbd></td><td>编码器过热</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226502217742&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E765.0</kbd></td><td>第三方编码器过热或者过速</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412033&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E900.0</kbd></td><td>DI紧急刹车</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412034&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E901.0</kbd></td><td>停机方式无效警告</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412035&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E902.0</kbd></td><td>DI设置无效</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412036&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E902.1</kbd></td><td>DO设置无效</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412037&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E902.2</kbd></td><td>转矩到达设置无效</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412038&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E902.3</kbd></td><td>位置比较目标无效警告</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412039&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E908.0</kbd></td><td>机型识别校验码失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412040&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E909.0</kbd></td><td>电机过载警告</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412041&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E910.0</kbd></td><td>控制电过压</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412042&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E920.0</kbd></td><td>制动电阻过载</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412043&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E921.0</kbd></td><td>动态制动电阻过载警告</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412044&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E922.0</kbd></td><td>外接制动电阻阻值过小</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226506412045&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E924.0</kbd></td><td>泄放管过温</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606337&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E939.0</kbd></td><td>电机动力线断线</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606338&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E941.0</kbd></td><td>变更参数需重新上电生效</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606339&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E942.0</kbd></td><td>参数存储频繁</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606340&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E950.0</kbd></td><td>正向超程警告</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606341&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>E952.0</kbd></td><td>反向超程警告</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606342&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EA33.0</kbd></td><td>编码器读写校验异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606343&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EA41.0</kbd></td><td>转矩波动补偿失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606344&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EB00.0</kbd></td><td>位置偏差过大</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606345&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EB00.1</kbd></td><td>位置偏差溢出</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226510606346&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EB01.1</kbd></td><td>位置指令增量单次过大</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800642&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EB01.2</kbd></td><td>位置指令增量持续过大</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800643&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EB01.3</kbd></td><td>指令溢出</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800644&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EB01.4</kbd></td><td>旋转模式目标位置超过机械单圈位置的最大值</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800645&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE08.0</kbd></td><td>同步信号丢失</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800646&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE08.1</kbd></td><td>状态切换异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800647&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE08.2</kbd></td><td>IRQ丢失</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800648&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE08.3</kbd></td><td>网线连接不可靠</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800649&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE08.4</kbd></td><td>数据丢帧保护异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800650&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE08.5</kbd></td><td>数据帧转发异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800651&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE08.6</kbd></td><td>数据更新超时异常</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800652&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE08.7</kbd></td><td>错误帧预警</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800653&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE09.0</kbd></td><td>软限位位置设定错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226514800654&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE09.1</kbd></td><td>原点位置设定错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994945&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE09.2</kbd></td><td>齿轮比超限</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994946&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE09.3</kbd></td><td>无同步信号</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994947&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE09.5</kbd></td><td>PDO映射超限</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994948&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE11.0</kbd></td><td>ESI校验错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994949&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE11.1</kbd></td><td>总线读取EEPROM失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994950&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE11.2</kbd></td><td>总线更新EEPROM失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994951&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE12.0</kbd></td><td>EtherCAT初始化失败</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994952&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE13.0</kbd></td><td>EtherCAT同步周期设定错误</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994953&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+              <tr><td><kbd>EE15.0</kbd></td><td>EtherCAT同步周期误差过大</td><td><a class="source-link" href="https://work.inovance.com/serviceapp/alarm/openAlarmDetail?id=2068046226518994954&openId=oxf6Yjk-F_hQoeGWDB-j52eSrqmc" target="_blank" rel="noreferrer">详情</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>SV630N 告警查询</p>
+    </footer>
+
+    <script src="script.js?v=sv630n1"></script>
+  </body>
+</html>
