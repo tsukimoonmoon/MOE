@@ -127,6 +127,7 @@ nav {
 }
 
 nav a {
+  font-variant-numeric: lining-nums;
   transition: color 180ms ease;
 }
 
@@ -172,6 +173,7 @@ h1 {
   font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
   font-size: clamp(44px, 8vw, 78px);
   font-weight: 300;
+  font-variant-numeric: lining-nums;
   letter-spacing: 0.16em;
   line-height: 1.06;
 }
@@ -272,6 +274,7 @@ h1 {
   font-size: clamp(26px, 4vw, 36px);
   font-style: italic;
   font-weight: 300;
+  font-variant-numeric: lining-nums;
   letter-spacing: 0.06em;
 }
 
@@ -308,6 +311,7 @@ h1 {
   font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
   font-size: clamp(31px, 5vw, 44px);
   font-weight: 300;
+  font-variant-numeric: lining-nums;
   letter-spacing: 0.16em;
   text-align: center;
 }
@@ -348,6 +352,7 @@ h1 {
   font-size: 21px;
   font-style: italic;
   font-weight: 300;
+  font-variant-numeric: lining-nums;
   letter-spacing: 0.05em;
 }
 
