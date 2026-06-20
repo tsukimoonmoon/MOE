@@ -98,22 +98,31 @@ window.addEventListener("resize", startParticles);
 prefersReducedMotion.addEventListener("change", startParticles);
 startParticles();
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12, rootMargin: "0px 0px -80px" }
-);
+const revealElements = Array.from(document.querySelectorAll(".reveal, .table-block"));
+const isSmallScreen = window.matchMedia("(max-width: 680px)").matches;
 
-document.querySelectorAll(".reveal, .table-block").forEach((element) => {
-  element.classList.add("reveal");
-  revealObserver.observe(element);
-});
+if (isSmallScreen) {
+  revealElements.forEach((element) => {
+    element.classList.add("is-visible");
+  });
+} else {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: "0px 0px 120px" }
+  );
+
+  revealElements.forEach((element) => {
+    element.classList.add("reveal");
+    revealObserver.observe(element);
+  });
+}
 
 window.addEventListener(
   "mousemove",
@@ -134,46 +143,48 @@ const animateCursor = () => {
 
 animateCursor();
 
-document.querySelectorAll("a, input, .table-block").forEach((element) => {
+document.querySelectorAll("a, input, .table-block, .home-card").forEach((element) => {
   element.addEventListener("mouseenter", () => ring.classList.add("is-hovering"));
   element.addEventListener("mouseleave", () => ring.classList.remove("is-hovering"));
 });
 
-const empty = document.createElement("div");
-empty.className = "empty";
-empty.textContent = "没有匹配的快捷键。";
-empty.hidden = true;
-document.querySelector(".page").appendChild(empty);
+if (searchInput) {
+  const empty = document.createElement("div");
+  empty.className = "empty";
+  empty.textContent = "没有匹配的快捷键。";
+  empty.hidden = true;
+  document.querySelector(".page").appendChild(empty);
 
-const updateSearch = () => {
-  const query = searchInput.value.trim().toLowerCase();
-  let visibleRows = 0;
+  const updateSearch = () => {
+    const query = searchInput.value.trim().toLowerCase();
+    let visibleRows = 0;
 
-  rows.forEach((row) => {
-    const matched = !query || row.textContent.toLowerCase().includes(query);
-    row.classList.toggle("is-hidden", !matched);
-    if (matched) visibleRows += 1;
+    rows.forEach((row) => {
+      const matched = !query || row.textContent.toLowerCase().includes(query);
+      row.classList.toggle("is-hidden", !matched);
+      if (matched) visibleRows += 1;
+    });
+
+    blocks.forEach((block) => {
+      const hasVisibleRow = block.querySelector("tbody tr:not(.is-hidden)");
+      block.classList.toggle("is-hidden", !hasVisibleRow);
+    });
+
+    empty.hidden = !query || visibleRows > 0;
+  };
+
+  searchInput.addEventListener("input", updateSearch);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "/" && document.activeElement !== searchInput) {
+      event.preventDefault();
+      searchInput.focus();
+    }
+
+    if (event.key === "Escape" && document.activeElement === searchInput) {
+      searchInput.value = "";
+      searchInput.blur();
+      updateSearch();
+    }
   });
-
-  blocks.forEach((block) => {
-    const hasVisibleRow = block.querySelector("tbody tr:not(.is-hidden)");
-    block.classList.toggle("is-hidden", !hasVisibleRow);
-  });
-
-  empty.hidden = !query || visibleRows > 0;
-};
-
-searchInput.addEventListener("input", updateSearch);
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "/" && document.activeElement !== searchInput) {
-    event.preventDefault();
-    searchInput.focus();
-  }
-
-  if (event.key === "Escape" && document.activeElement === searchInput) {
-    searchInput.value = "";
-    searchInput.blur();
-    updateSearch();
-  }
-});
+}

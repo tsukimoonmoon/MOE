@@ -147,6 +147,10 @@ nav a:hover {
   text-align: center;
 }
 
+.home-intro {
+  max-width: 980px;
+}
+
 .eyebrow {
   margin: 0 0 14px;
   color: var(--muted);
@@ -218,6 +222,71 @@ h1 {
   border-color: var(--line-strong);
   background: rgba(255, 255, 255, 0.96);
   box-shadow: var(--shadow);
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 42px;
+}
+
+.home-card {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  border: 1px solid rgba(229, 231, 235, 0.92);
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: 0 1px 0 rgba(148, 163, 184, 0.12);
+  backdrop-filter: blur(12px);
+  text-align: left;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+}
+
+.home-card-index {
+  color: var(--muted);
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+}
+
+.home-card h2 {
+  margin: 34px 0 12px;
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
+  font-size: clamp(26px, 4vw, 36px);
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
+.home-card p {
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: var(--muted);
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.back-link:hover {
+  color: var(--text);
 }
 
 .section {
@@ -355,14 +424,26 @@ kbd {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(42px);
-  transition: opacity 700ms ease, transform 700ms ease;
+  opacity: 1;
+  transform: none;
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (min-width: 681px) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(42px);
+    transition: opacity 700ms ease, transform 700ms ease;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 680px) {
@@ -395,6 +476,10 @@ kbd {
   .intro {
     padding: 44px 0 34px;
     text-align: left;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
   }
 
   .intro > p:not(.eyebrow) {
