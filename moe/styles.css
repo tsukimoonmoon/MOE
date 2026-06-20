@@ -235,7 +235,6 @@ h1 {
   min-height: 230px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 30px;
   border: 1px solid rgba(229, 231, 235, 0.92);
   border-radius: 8px;
@@ -260,6 +259,7 @@ h1 {
 }
 
 .home-card h2 {
+  min-height: 92px;
   margin: 34px 0 12px;
   font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
   font-size: clamp(26px, 4vw, 36px);
@@ -269,6 +269,7 @@ h1 {
 }
 
 .home-card p {
+  margin-top: auto;
   color: var(--muted);
   font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
   font-size: 17px;
